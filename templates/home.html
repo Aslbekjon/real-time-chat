@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>home</h1>
+    <form id="post-form" method="Post" action="checkview">
+        {% csrf_token %}
+        <label>Room Name</label>
+        <input type="text" name="room_name" id="room_name" width="100px" />
+        <label>Username</label>
+        <input type="text" name="username" id="username" width="100px" />
+        <input type="submit" value="Enter Room">
+    </form>
+
+    
+
+</body>
+</html>
